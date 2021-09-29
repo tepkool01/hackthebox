@@ -1,0 +1,37 @@
+nmap -v -sV 10.10.10.27
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-29 10:11 PDT
+NSE: Loaded 45 scripts for scanning.
+Initiating Ping Scan at 10:11
+Scanning 10.10.10.27 [4 ports]
+Completed Ping Scan at 10:11, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:11
+Completed Parallel DNS resolution of 1 host. at 10:11, 1.04s elapsed
+Initiating SYN Stealth Scan at 10:11
+Scanning 10.10.10.27 [1000 ports]
+Discovered open port 445/tcp on 10.10.10.27
+Discovered open port 135/tcp on 10.10.10.27
+Discovered open port 139/tcp on 10.10.10.27
+Discovered open port 1433/tcp on 10.10.10.27
+Completed SYN Stealth Scan at 10:11, 1.42s elapsed (1000 total ports)
+Initiating Service scan at 10:11
+Scanning 4 services on 10.10.10.27
+Completed Service scan at 10:12, 6.37s elapsed (4 services on 1 host)
+NSE: Script scanning 10.10.10.27.
+Initiating NSE at 10:12
+Completed NSE at 10:12, 0.00s elapsed
+Initiating NSE at 10:12
+Completed NSE at 10:12, 0.00s elapsed
+Nmap scan report for 10.10.10.27
+Host is up (0.091s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE      VERSION
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+1433/tcp open  ms-sql-s     Microsoft SQL Server 2017 14.00.1000
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.22 seconds
+           Raw packets sent: 1004 (44.152KB) | Rcvd: 1001 (40.056KB)
